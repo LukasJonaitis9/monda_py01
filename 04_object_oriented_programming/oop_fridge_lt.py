@@ -55,9 +55,50 @@ class Fridge:
     def check_recipe(self, recipe:Recipe):
         pass
 
+    def print_menu():
+    print("\nMenu:")
+    print("0. Exit")
+    print("1. Add product")
+    print("2. Change ingredient quantity")
+    print("3. Remove ingredient")
+    print("4. Check products")
+    print("5. Change product quantity")
+    print("6. Print recipe")
+
 
 def main():
     fridge = Fridge()
+
+     while True:
+        print_menu()
+        choice = input("Enter your choice (0-6): ")
+
+        if choice == '0':
+            print("Exiting the program.")
+            break
+        elif choice == '1':
+            name = input("Enter product name: ")
+            quantity = float(input("Enter product quantity: "))
+            fridge.add_product(name, quantity)
+        elif choice == '2':
+            # Implement change ingredient quantity
+            pass
+        elif choice == '3':
+            # Implement remove ingredient
+            pass
+        elif choice == '4':
+            fridge.print_contents()
+        elif choice == '5':
+            # Implement change product quantity
+            pass
+        elif choice == '6':
+            # Implement print recipe
+            pass
+        else:
+            print("Invalid choice. Please enter a number between 0 and 6.")
+
+if __name__ == "__main__":
+    main()
     # meniukas | vartotojo sasaja
 
 # apple = Product('apple', 1)

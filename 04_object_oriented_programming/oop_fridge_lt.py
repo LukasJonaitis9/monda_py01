@@ -105,3 +105,7 @@ if __name__ == "__main__":
 # another_apple = Product('apple', 1)
 
 # print(apple == another_apple)
+import matematika
+
+print(matematika.daugyba(4, 5))
+print(matematika.dalyba(10, 2))
